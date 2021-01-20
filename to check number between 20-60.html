@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>To check whether number lies between 20 to 60</h1>
+
+<input id="numb">
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x, text;
+  x = document.getElementById("numb").value;
+  if ( x < 60 && x > 20) {
+    text = x + " lies between 20 to 60";
+  } else {
+    text = x + " not lies between 20 to 60";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html> 

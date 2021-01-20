@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form name="myform">
+	Number1: <input type="text" name="fst">
+	<br>
+	Number2: <input type="text" name="snd">
+	<br>
+	<input type="button" name="" value="ADD" onclick="add()">
+	<input type="button" name="" value="SUBTRACT" onclick="subtract()">
+	<input type="button" name="" value="MULTIPLY" onclick="multiply()">
+	<input type="button" name="" value="DIVIDE" onclick="divide()">
+	<BR>
+	Result: <input type="text" name="result">
+</form>
+<script type="text/javascript">
+function add(){
+		fst = parseInt(myform.fst.value);
+    	snd = parseInt(myform.snd.value);
+   		result = fst + snd;
+		myform.result.value=result;
+	}
+function subtract()
+	{
+		fst = parseInt(myform.fst.value);
+    	snd = parseInt(myform.snd.value);
+   		result = fst - snd;
+		myform.result.value=result;
+	}
+function multiply()
+	{
+      	fst = parseInt(myform.fst.value);
+    	snd = parseInt(myform.snd.value);
+   		result = fst * snd;
+		myform.result.value=result;
+	}
+
+function divide() 
+	{ 
+    	fst = parseInt(myform.fst.value);
+    	snd = parseInt(myform.snd.value);
+   		result = fst / snd;
+		myform.result.value=result;
+	}
+
+</script>
+</body>
+</html>
